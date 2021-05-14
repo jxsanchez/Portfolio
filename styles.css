@@ -1,0 +1,663 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #75c8ff;
+}
+
+a,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  color: #344966;
+  font-size: 1.2rem;
+}
+
+/* GENERAL */
+.scroll-top {
+  bottom: 5%;
+  color: #f2b257;
+  font-weight: bold;
+  font-size: 5rem;
+  position: fixed;
+  right: 3%;
+  z-index: 2;
+}
+
+.scroll-top:hover {
+  color: #fff;
+  text-shadow: 0 0 10px#f2b257;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.section-divider {
+  border-color: #75c8ff;
+  border-style: dotted none none;
+  border-width: 20px;
+  height: 0;
+  margin: 50px auto;
+  width: 7%;
+}
+
+.section {
+  height: 500px;
+  padding: 25px 100px;
+  position: relative;
+  width: 100%;
+}
+
+.section-title {
+  color: #f2b257;
+  /* color: #75c8ff; */
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+.continue-wrapper {
+  animation: float 1s infinite alternate ease-in-out;
+  align-items: center;
+  bottom: 5%;
+  color: #344966;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+}
+
+.continue-wrapper:hover {
+  cursor: pointer;
+}
+
+.continue-link,
+.continue-link:hover {
+  font-size: 1.7rem;
+  color: #344966;
+}
+
+.continue-arrow {
+  font-size: 2.5rem;
+}
+
+@keyframes float {
+  from {
+    bottom: 4%;
+  }
+  to {
+    bottom: 6%;
+  }
+}
+
+.filter-wrapper {
+  height: 100%;
+}
+
+.filter {
+  background: rgba(255, 255, 255, 0.8);
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* NAVIGATION */
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  right: 1%;
+  position: absolute;
+  top: 5%;
+  width: 25%;
+  z-index: 1;
+}
+
+.nav-link {
+  color: #f2b257;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px#fff;
+}
+
+.nav-link:hover {
+  color: #fff;
+  text-shadow: 0px 0px 5px#f2b257;
+}
+
+/* LANDING */
+#landing {
+  align-items: center;
+  background: url("img/mosaic-top-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 250%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+}
+
+.landing-title {
+  /* color: #57b4f3; */
+  color: #f2b257;
+  font-size: 4rem;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.landing-subheading {
+  color: #57b4f3;
+  /* color: #f2b257; */
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+
+.landing-links-wrapper {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+}
+
+.contact-link {
+  color: #a1d9ff;
+  font-size: 3rem;
+}
+
+.contact-link:hover {
+  color: #fff;
+  text-shadow: 0px 0px 5px #a1d9ff;
+}
+
+/* ABOUT */
+#about {
+  padding-bottom: 600px;
+}
+
+/* PROJECTS */
+#projects {
+  padding-bottom: 675px;
+}
+
+.carousel {
+  height: 65vh;
+  padding: 0 200px;
+}
+
+.carousel-indicators {
+  /* figure this out */
+}
+
+.carousel-indicators li {
+  background-color: #f2b257;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  min-height: 100%;
+  width: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+}
+
+.carousel-caption h5 {
+  color: #57b4f3;
+  font-size: 2rem;
+}
+
+.carousel-control-btn {
+  color: #57b4f3;
+  font-size: 100px;
+}
+
+/***********
+ * CONTACT *
+ ***********/
+#contact {
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+}
+
+#contact-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.contact-email {
+  height: 3rem;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.contact-msg {
+  height: 30%;
+  margin-bottom: 30px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+}
+
+.contact-submit {
+  background: #57b4f3;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.3rem;
+  height: 50px;
+  width: 50px;
+}
+
+.contact-submit:focus {
+  outline: none;
+}
+
+/* FOOTER */
+#footer {
+  align-items: center;
+  background: url("img/mosaic-btm-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  justify-content: flex-end;
+  padding: 0 0 25px 0;
+  text-shadow: 0 0 10px #fff;
+}
+
+.bg-credit-link {
+  color: #a87227;
+  margin-top: 10px;
+}
+
+/************************
+   * MOBILE MEDIA QUERIES *
+   ************************/
+/* MOBILE PORTRAIT ORIENTATION */
+@media only screen and (min-width: 375px) and (max-width: 926px) {
+  /* GENERAL */
+  .scroll-top {
+    bottom: 5%;
+    font-size: 4rem;
+    right: 5%;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .section-divider {
+    border-style: dotted none none;
+    border-width: 15px;
+    margin: 20px auto;
+    width: 20%;
+  }
+
+  .section {
+    padding: 25px;
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  /* NAVIGATION */
+  .navigation {
+    top: 5%;
+    width: 100%;
+  }
+
+  /* LANDING */
+  #landing {
+    background-position-y: -50vh;
+    height: 90vh;
+  }
+
+  .landing-title {
+    font-size: 3.2rem;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  .landing-subheading {
+    font-size: 1.8rem;
+  }
+
+  .landing-links-wrapper {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+  }
+
+  .contact-link {
+    font-size: 2.5rem;
+  }
+
+  /* PROJECTS */
+  #projects {
+    padding-bottom: 600px;
+  }
+
+  .carousel {
+    height: 50vh;
+    padding: 0;
+  }
+
+  .carousel-control-btn {
+    font-size: 2.5rem;
+  }
+
+  /***********
+ * CONTACT *
+ ***********/
+  #contact {
+    height: 45vh;
+  }
+
+  #contact-form {
+    width: 90%;
+  }
+
+  .contact-email {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .contact-msg {
+    height: 40%;
+    margin-bottom: 15px;
+  }
+
+  .contact-submit {
+    height: 45px;
+    width: 45px;
+  }
+
+  /* FOOTER */
+  #footer {
+    align-items: center;
+    background: url("img/mosaic-btm-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: flex-end;
+    padding: 0 0 25px 0;
+    text-align: center;
+  }
+}
+
+/* MOBILE LANDSCAPE ORIENTATION */
+@media only screen and (min-width: 375px) and (max-width: 926px) and (orientation: landscape) {
+  /* GENERAL */
+  .section-divider {
+    border-style: dotted none none;
+    border-width: 15px;
+    width: 10%;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .section {
+    padding: 25px 70px;
+  }
+
+  .filter {
+    display: block;
+  }
+
+  /* NAVIGATION */
+  .navigation {
+    top: 5%;
+    width: 50%;
+  }
+
+  /* LANDING */
+  #landing {
+    background-position-y: -85vh;
+    height: 95vh;
+  }
+
+  .landing-links-wrapper {
+    width: 20%;
+    padding: 15px 0 20px 0;
+  }
+
+  /* PROJECTS */
+  #projects {
+    padding-bottom: 600px;
+  }
+
+  .carousel {
+    height: 70vh;
+    padding: 0;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-control-btn {
+    font-size: 2.5rem;
+  }
+
+  /***********
+ * CONTACT *
+ ***********/
+  #contact {
+    height: 80vh;
+    margin-bottom: 50px;
+  }
+
+  #contact-form {
+    width: 70%;
+  }
+
+  .contact-msg {
+    height: 50%;
+    margin-bottom: 15px;
+  }
+
+  .contact-submit {
+    height: 45px;
+    width: 45px;
+  }
+
+  /* FOOTER */
+  #footer {
+    background-position-y: -50px;
+    height: 30vh;
+  }
+}
+
+/************************
+ * TABLET MEDIA QUERIES *
+ ************************/
+
+/* PORTRAIT ORIENTATION */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  p {
+    font-size: 2rem;
+  }
+
+  /* GENERAL */
+  .section-divider {
+    border-style: dotted none none;
+    border-width: 25px;
+    margin: 20px auto;
+    width: 10%;
+  }
+
+  .section {
+    padding: 25px 100px;
+  }
+
+  .section-title {
+    font-size: 4rem;
+  }
+
+  .continue-link {
+    font-size: 2.7rem;
+  }
+
+  .continue-arrow {
+    font-size: 4rem;
+  }
+
+  /* NAVIGATION */
+  .navigation {
+    top: 5%;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 2.5rem;
+  }
+
+  /* LANDING */
+  #landing {
+    background-position-y: -55vh;
+    height: 100vh;
+  }
+
+  .landing-title {
+    font-size: 5.5rem;
+    letter-spacing: 10px;
+  }
+
+  .landing-subheading {
+    font-size: 3.4rem;
+  }
+
+  .landing-links-wrapper {
+    width: 30%;
+    padding: 25px 0;
+  }
+
+  .contact-link {
+    font-size: 3.8rem;
+  }
+
+  /* FOOTER */
+  #footer {
+    height: 25vh;
+  }
+
+  .bg-credit-link {
+    font-size: 1.7rem;
+  }
+}
+
+/* LANDSCAPE ORIENTATION */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  p {
+    font-size: 2rem;
+  }
+
+  /* GENERAL */
+  .section-divider {
+    border-style: dotted none none;
+    border-width: 25px;
+    margin: 20px auto;
+    width: 10%;
+  }
+
+  .section {
+    padding: 25px 75px;
+  }
+
+  .section-title {
+    font-size: 4rem;
+  }
+
+  .continue-link {
+    font-size: 2.7rem;
+  }
+
+  .continue-arrow {
+    font-size: 4rem;
+  }
+
+  /* NAVIGATION */
+  .navigation {
+    top: 5%;
+    width: 50%;
+  }
+
+  .nav-link {
+    font-size: 2rem;
+  }
+
+  /* LANDING */
+  #landing {
+    background-position-y: -55vh;
+    height: 100vh;
+  }
+
+  .landing-title {
+    font-size: 5.5rem;
+    letter-spacing: 10px;
+  }
+
+  .landing-subheading {
+    font-size: 3.4rem;
+  }
+
+  .landing-links-wrapper {
+    width: 30%;
+    padding: 25px 0;
+  }
+
+  .contact-link {
+    font-size: 3.8rem;
+  }
+
+  /* FOOTER */
+  #footer {
+    height: 25vh;
+  }
+
+  .bg-credit-link {
+    font-size: 1.7rem;
+  }
+}
