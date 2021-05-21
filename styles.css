@@ -102,18 +102,6 @@ p {
   }
 }
 
-.filter-wrapper {
-  height: 100%;
-}
-
-.filter {
-  background: rgba(255, 255, 255, 0.8);
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
 /* NAVIGATION */
 .navigation {
   display: flex;
@@ -217,6 +205,15 @@ p {
 
 .carousel-item img {
   height: 100%;
+}
+
+.project-img {
+  height: 100%;
+}
+
+.carousel-caption {
+  bottom: 80px;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .carousel-caption h5 {
@@ -329,10 +326,6 @@ p {
     margin-bottom: 10px;
   }
 
-  .filter {
-    display: none;
-  }
-
   /* NAVIGATION */
   .navigation {
     top: 5%;
@@ -436,10 +429,6 @@ p {
 
   .section {
     padding: 25px 70px;
-  }
-
-  .filter {
-    display: block;
   }
 
   /* NAVIGATION */
