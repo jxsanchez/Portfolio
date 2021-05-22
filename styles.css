@@ -180,6 +180,7 @@ p {
 
 .carousel {
   height: 65vh;
+  margin-top: 30px;
   padding: 0 200px;
 }
 
@@ -232,7 +233,7 @@ p {
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin: 0 auto;
+  margin: 30px auto 0;
   width: 50%;
 }
 
@@ -266,7 +267,7 @@ p {
   outline: none;
 }
 
-/* FOOTER */
+/************************ FOOTER ************************/
 #footer {
   align-items: center;
   background: url("img/mosaic-btm-bg.jpg");
@@ -400,7 +401,7 @@ p {
     width: 45px;
   }
 
-  /* FOOTER */
+  /************************ FOOTER ************************/
   #footer {
     align-items: center;
     background: url("img/mosaic-btm-bg.jpg");
@@ -498,7 +499,7 @@ p {
     width: 45px;
   }
 
-  /* FOOTER */
+  /************************ FOOTER ************************/
   #footer {
     background-position-y: -50px;
     height: 30vh;
@@ -508,7 +509,6 @@ p {
 /************************
  * TABLET MEDIA QUERIES *
  ************************/
-
 /* PORTRAIT ORIENTATION */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
   p {
@@ -573,7 +573,7 @@ p {
     font-size: 3.8rem;
   }
 
-  /* PROJECTS */
+  /************************ PROJECTS ************************/
   #projects {
     padding-bottom: 675px;
   }
@@ -615,7 +615,7 @@ p {
     /* figure this out */
   }
 
-  /* FOOTER */
+  /************************ FOOTER ************************/
   #footer {
     height: 25vh;
   }
@@ -691,7 +691,7 @@ p {
 
   /************************ PROJECTS ************************/
   #projects {
-    padding-bottom: 675px;
+    padding-bottom: 750px;
   }
 
   .carousel {
