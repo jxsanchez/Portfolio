@@ -185,7 +185,7 @@ p {
 
 /************************ PROJECTS ************************/
 #projects {
-  padding-bottom: 675px;
+  padding-bottom: 720px;
 }
 
 .carousel {
@@ -363,7 +363,7 @@ p {
     padding-bottom: 170px;
   }
 
-  /* PROJECTS */
+  /************************ PROJECTS ************************/
   #projects {
     padding-bottom: 700px;
   }
@@ -390,15 +390,14 @@ p {
     bottom: -60px;
   }
 
-  /***********
- * CONTACT *
- ***********/
+  /************************ CONTACT ************************/
   #contact {
     height: 45vh;
   }
 
   #contact-form {
     width: 90%;
+    margin-top: 20px;
   }
 
   .contact-email {
