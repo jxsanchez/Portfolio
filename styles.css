@@ -38,10 +38,6 @@ p {
   text-shadow: 0 0 10px#f2b257;
 }
 
-.mobile-only {
-  display: none;
-}
-
 .section-divider {
   border-color: #75c8ff;
   border-style: dotted none none;
@@ -132,6 +128,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 250%;
+  border: none;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -176,7 +173,7 @@ p {
   padding-bottom: 600px;
 }
 
-/* PROJECTS */
+/************************ PROJECTS ************************/
 #projects {
   padding-bottom: 675px;
 }
@@ -184,10 +181,6 @@ p {
 .carousel {
   height: 65vh;
   padding: 0 200px;
-}
-
-.carousel-indicators {
-  /* figure this out */
 }
 
 .carousel-indicators li {
@@ -227,9 +220,7 @@ p {
   font-size: 100px;
 }
 
-/***********
- * CONTACT *
- ***********/
+/************************* CONTACT *************************/
 #contact {
   display: flex;
   flex-direction: column;
@@ -304,10 +295,6 @@ p {
     bottom: 5%;
     font-size: 4rem;
     right: 5%;
-  }
-
-  .mobile-only {
-    display: block;
   }
 
   .section-divider {
@@ -437,10 +424,6 @@ p {
     width: 10%;
   }
 
-  .mobile-only {
-    display: none;
-  }
-
   .section {
     padding: 25px 70px;
   }
@@ -527,7 +510,7 @@ p {
  ************************/
 
 /* PORTRAIT ORIENTATION */
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
   p {
     font-size: 2rem;
   }
@@ -590,6 +573,48 @@ p {
     font-size: 3.8rem;
   }
 
+  /* PROJECTS */
+  #projects {
+    padding-bottom: 675px;
+  }
+
+  .carousel {
+    height: fit-content;
+    padding: 0 200px;
+  }
+
+  .carousel-inner {
+    height: fit-content;
+  }
+
+  .carousel-item {
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .carousel-item img {
+    height: 100%;
+  }
+
+  .carousel-caption {
+    bottom: 80px;
+    padding: 15px 30px 0;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.3rem;
+  }
+
+  .carousel-control-btn {
+    color: #57b4f3;
+    font-size: 100px;
+    height: 10%;
+  }
+
+  .carousel-indicators {
+    /* figure this out */
+  }
+
   /* FOOTER */
   #footer {
     height: 25vh;
@@ -603,13 +628,13 @@ p {
 /* LANDSCAPE ORIENTATION */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
-  /* GENERAL */
+  /************************ GENERAL *************************/
   .section-divider {
     border-style: dotted none none;
-    border-width: 25px;
+    border-width: 15px;
     margin: 20px auto;
     width: 10%;
   }
@@ -619,52 +644,94 @@ p {
   }
 
   .section-title {
-    font-size: 4rem;
-  }
-
-  .continue-link {
     font-size: 2.7rem;
   }
 
-  .continue-arrow {
-    font-size: 4rem;
+  .continue-link {
+    font-size: 2rem;
   }
 
-  /* NAVIGATION */
+  .continue-arrow {
+    font-size: 3rem;
+  }
+
+  /************************ NAVIGATION **************************/
   .navigation {
     top: 5%;
     width: 50%;
   }
 
   .nav-link {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
-  /* LANDING */
+  /************************ LANDING ************************/
   #landing {
     background-position-y: -55vh;
     height: 100vh;
   }
 
   .landing-title {
-    font-size: 5.5rem;
+    font-size: 3.5rem;
     letter-spacing: 10px;
   }
 
   .landing-subheading {
-    font-size: 3.4rem;
+    font-size: 2.2rem;
   }
 
   .landing-links-wrapper {
-    width: 30%;
+    width: 20%;
     padding: 25px 0;
   }
 
   .contact-link {
-    font-size: 3.8rem;
+    font-size: 3rem;
   }
 
-  /* FOOTER */
+  /************************ PROJECTS ************************/
+  #projects {
+    padding-bottom: 675px;
+  }
+
+  .carousel {
+    height: fit-content;
+    margin-top: 30px;
+    padding: 0 50px;
+  }
+
+  .carousel-caption {
+    bottom: 15px;
+    padding: 15px 20px 0;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.7rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+
+  .carousel-control-btn {
+    font-size: 5rem;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 20px;
+  }
+
+  .carousel-indicators {
+    bottom: -55px;
+  }
+
+  /************************* CONTACT *************************/
+  #contact-form {
+    margin-top: 25px;
+  }
+
+  /************************ FOOTER ************************/
   #footer {
     height: 25vh;
   }
