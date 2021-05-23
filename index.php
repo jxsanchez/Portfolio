@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Jesus Sanchez Web Development Portfolio</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Bootstrap 4 CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
-</head>
+<?php include '../partials/header.php'; ?>
 
 <body>
     <nav id="#top" class="navigation">
@@ -59,6 +36,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
+                        <h3 class="skill-title">Languages</h3>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                        <p>PHP</p>
+                        <p>SQL</p>
+                        <p>C++</p>
+                    </div>
+
+                    <div class="col-sm">
                         <h3 class="skill-title">Technologies</h3>
                         <p>Git/GitHub</p>
                         <p>Node.js (Express.js)</p>
@@ -66,14 +53,6 @@
                         <p>MySQL</p>
                         <p>MongoDB (Mongoose)</p>
                         <p>WordPress</p>
-                    </div>
-
-                    <div class="col-sm">
-                        <h3 class="skill-title">Languages</h3>
-                        <p>Javascript</p>
-                        <p>PHP</p>
-                        <p>SQL</p>
-                        <p>C++</p>
                     </div>
                     
                     <div class="col-sm">
@@ -178,11 +157,4 @@
         </form>
     </section> <!-- End of Contact-->
 
-    <footer id="footer">
-        <p>Made by Jesus Sanchez</p>
-        <a class="bg-credit-link" href='https://www.freepik.com/vectors/background'>Background vector created by
-            Harryarts - www.freepik.com</a>
-    </footer>
-</body>
-
-</html>
+<?php include '../partials/footer.php'; ?>
