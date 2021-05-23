@@ -21,4 +21,9 @@
 
     <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
+<<<<<<< HEAD
 </head>
+=======
+</head>
+<body>
+>>>>>>> 324ba174467c5d08f36809cd55b25335559b43df
