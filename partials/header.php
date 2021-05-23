@@ -1,3 +1,7 @@
+<?php
+    include 'includes/class-autoload.inc.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

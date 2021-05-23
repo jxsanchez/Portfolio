@@ -1,5 +1,5 @@
 <section id="contact" class="section">
-    <h1 class="section-title">Please don't hesitate to ask any questions!</h1>
+    <h1 class="section-title">Please don't hesitate to contact me!</h1>
 
     <form action="" id="contact-form">
         <input class="contact-email" type="text" placeholder="Your E-mail">

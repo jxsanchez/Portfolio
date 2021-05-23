@@ -3,8 +3,7 @@
     <h2 class="landing-subheading">Full-Stack Web Developer</h2>
 
     <div class="landing-links-wrapper">
-        <a href="#"><i class="contact-link fa fa-github-alt"></i></a>
-        <a href="#"><i class="contact-link fa fa-linkedin"></i></a>
+        <a href="https://github.com/jxsanchez" target="blank"><i class="contact-link fa fa-github-alt"></i></a>
     </div>
 
     <div class="continue-wrapper">

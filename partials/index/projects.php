@@ -1,3 +1,11 @@
+<?php 
+    include_once "classes/project.class.php";    
+
+    $projectObj = new Project(); // Project object.
+
+    $projects = $projectObj->getProjects(); // Get all projects from database.
+?>
+
 <section id="projects" class="section">
     <h1 class="section-title">A few of my projects.</h1>
 
@@ -6,38 +14,38 @@
     <!-- Project Carousel -->
     <div id="projectCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#projectCarousel" data-slide-to="1"></li>
-            <!-- <li data-target="#projectCarousel" data-slide-to="2"></li> -->
+        <?php
+            foreach($projects as $key => $project) {
+                echo '<li data-target="#projectCarousel" data-slide-to="'.$key.'"';
+
+                // Add active class to first project
+                echo ($key == 0) ? ' class="active"' : '';
+
+                echo '></li>';
+            }
+        ?>
         </ol>
 
         <div class="carousel-inner">
-            <a href="https://saludnexito.com/" class="carousel-item active" target="blank">
-                <img src="img/project-1.png" class="d-none d-md-block" alt="Salud n Exito Preview">
-                <img src="img/project-1-m.png" class="d-md-none d-xs-block" alt="Salud n Exito Preview">
+            <?php 
+                // Display all projects as carousel items using database information
+                foreach($projects as $key => $project) {
+                    echo '<a href="'.$project["url"].'" class="carousel-item ';
 
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Salud n Exito</h5>
-                    <p>Simple WordPress landing page. Displays product details, links to main shop, and provides contact details.</p>
-                </div>
-            </a>
+                    // Add active class to first project
+                    echo ($key == 0) ? ' active' : '';       
+                    
+                    echo '" target="blank">';
 
-            <a href="https://thawing-forest-99001.herokuapp.com/" class="carousel-item" target="blank">
-                <img src="img/project-2.png" class="d-none d-md-block" alt="Like Deleter Preview">
-                <img src="img/project-2-m.png" class="d-md-none d-xs-block" alt="Like Deleter Preview">
-
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Like Deleter</h5>
-                    <p>Twitter API project that utilizes login with Twitter. Displays user information and allows user to tweet and delete up to 200 likes.</p>
-                </div>
-            </a>
-
-            <!-- <div class="carousel-item">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Project 3 Title</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus necessitatibus dignissimos</p>
-                </div>
-            </div> -->
+                    echo '<img src="'.$project["img_url"].'" class="d-none d-md-block">
+                        <img src="'.$project["img_url_m"].'" class="d-md-none d-xs-block">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>'.$project["title"].'</h5>
+                            <p>'.$project["description"].'</p>
+                        </div>
+                     </a>';
+                }
+            ?>
         </div> <!-- end of carousel-inner -->
 
         <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
@@ -51,7 +59,9 @@
     </div>
 
     <div class="continue-wrapper">
-        <a href="#contact" class="continue-link">What can I make for you?</a>
+        <a href="#contact" class="continue-link">Any questions?</a>
         <i class="fa fa-angle-down continue-arrow"></i>
     </div>
 </section> <!-- End of Projects-->
+
+<hr class="section-divider">
