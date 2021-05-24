@@ -8,9 +8,13 @@ function hideScrollTop() {
 
 function closeNav() {
     const navbar = document.querySelector(".navbar-collapse");
-    const scrollTop = document.querySelector(".scroll-top");
 
-    navbar.classList.add("collapsing");
-    navbar.classList.remove("show");
-    scrollTop.classList.remove("hide");
+    // Only hide navbar if on mobile.
+    if(navbar.classList.contains("show")) {
+        const scrollTop = document.querySelector(".scroll-top");
+
+        navbar.classList.add("collapsing");
+        navbar.classList.remove("show");
+        scrollTop.classList.remove("hide");
+    }
 }
