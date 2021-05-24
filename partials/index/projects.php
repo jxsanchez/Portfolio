@@ -9,8 +9,6 @@
 <section id="projects" class="section">
     <h1 class="section-title">A few of my projects.</h1>
 
-    <p class="d-md-none d-xs-block">Rotate your screen to see project details. </p>
-
     <!-- Project Carousel -->
     <div id="projectCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -43,6 +41,7 @@
                         <div class="carousel-caption">
                             <h5>'.$project["title"].'</h5>
                             <p>'.$project["description"].'</p>
+                            
                             <div class="caption-links">';
 
                     echo ($project["url"] != "none") ? '<a href="'.$project["url"].'" target="blank"><i class="fa fa-external-link"></i></a>' : '';

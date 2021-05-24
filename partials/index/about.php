@@ -42,3 +42,5 @@
         <i class="fa fa-angle-down continue-arrow"></i>
     </div>
 </section> <!-- End of About-->
+
+<hr class="section-divider">

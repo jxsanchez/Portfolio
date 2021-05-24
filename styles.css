@@ -412,6 +412,10 @@ p {
     font-size: 2.5rem;
   }
 
+  .contact-link.fa-envelope {
+    font-size: 2.2rem;
+  }
+
   /************************ ABOUT ************************/
   #about {
     padding-bottom: 170px;
@@ -419,11 +423,11 @@ p {
 
   /************************ PROJECTS ************************/
   #projects {
-    padding-bottom: 700px;
+    padding-bottom: 820px;
   }
 
   .carousel {
-    height: 50vh;
+    height: fit-content;
     padding: 0;
   }
 
@@ -433,6 +437,30 @@ p {
 
   .carousel-control-btn {
     font-size: 2.5rem;
+  }
+
+  .carousel-caption {
+    height: 50%;
+    width: 85%;
+    padding: 30px 5px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.4rem;
+  }
+
+  .caption-links a {
+    font-size: 1.4rem;
+    margin: 0 7px;
+  }
+
+  .caption-links a .fa-github-alt {
+    font-size: 1.6rem;
+    margin: 0 5px;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem;
   }
 
   .carousel-control-next,
@@ -526,8 +554,8 @@ p {
   }
 
   .carousel-caption {
-    bottom: 50px;
-    padding: 0 10px;
+    height: 70%;
+    padding: 10px 20px;
   }
 
   .carousel-caption h5 {
@@ -543,7 +571,7 @@ p {
   }
 
   .carousel-indicators {
-    bottom: -50px;
+    bottom: 15px;
   }
 
   /***********

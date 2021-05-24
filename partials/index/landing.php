@@ -12,3 +12,5 @@
         <i class="fa fa-angle-down continue-arrow"></i>
     </div>
 </section> <!-- End of Landing-->
+
+<hr class="section-divider">
