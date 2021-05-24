@@ -198,7 +198,8 @@ p {
 
 /************************ PROJECTS ************************/
 #projects {
-  padding-bottom: 720px;
+  padding-bottom: 150px;
+  height: fit-content;
 }
 
 .carousel {
@@ -354,7 +355,7 @@ p {
    * MOBILE MEDIA QUERIES *
    ************************/
 /* MOBILE PORTRAIT ORIENTATION */
-@media only screen and (min-width: 375px) and (max-width: 926px) {
+@media only screen and (min-width: 320px) and (max-width: 926px) {
   /* GENERAL */
   .scroll-top {
     bottom: 5%;
@@ -423,7 +424,7 @@ p {
 
   /************************ PROJECTS ************************/
   #projects {
-    padding-bottom: 820px;
+    padding-bottom: 250px;
   }
 
   .carousel {
@@ -514,7 +515,7 @@ p {
 }
 
 /* MOBILE LANDSCAPE ORIENTATION */
-@media only screen and (min-width: 375px) and (max-width: 926px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 926px) and (orientation: landscape) {
   /* GENERAL */
   .section-divider {
     border-style: dotted none none;
@@ -545,7 +546,7 @@ p {
 
   /* PROJECTS */
   #projects {
-    padding-bottom: 400px;
+    padding-bottom: 200px;
   }
 
   .carousel {
@@ -672,7 +673,6 @@ p {
 
   /************************ PROJECTS ************************/
   #projects {
-    padding-bottom: 675px;
   }
 
   .carousel {
@@ -788,7 +788,6 @@ p {
 
   /************************ PROJECTS ************************/
   #projects {
-    padding-bottom: 750px;
   }
 
   .carousel {
