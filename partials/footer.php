@@ -4,6 +4,8 @@
         <a class="bg-credit-link" href='https://www.freepik.com/vectors/background'>Background vector created by
             Harryarts - www.freepik.com</a>
     </footer>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>
