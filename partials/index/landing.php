@@ -4,7 +4,7 @@
 
     <div class="landing-links-wrapper">
         <a href="https://github.com/jxsanchez" target="blank"><i class="contact-link fa fa-github-alt"></i></a>
-        <a href="mailto:jxasanchez@gmail.com"><i class="contact-link fa fa-envelope"></i></a>
+        <a href="#contact"><i class="contact-link fa fa-envelope"></i></a>
     </div>
 
     <div class="continue-wrapper">

@@ -30,7 +30,7 @@
             <?php 
                 // Display all projects as carousel items using database information
                 foreach($projects as $key => $project) {
-                    echo '<a href="'.$project["url"].'" class="carousel-item ';
+                    echo '<div class="carousel-item ';
 
                     // Add active class to first project
                     echo ($key == 0) ? ' active' : '';       
@@ -39,11 +39,18 @@
 
                     echo '<img src="'.$project["img_url"].'" class="d-none d-md-block">
                         <img src="'.$project["img_url_m"].'" class="d-md-none d-xs-block">
-                        <div class="carousel-caption d-none d-md-block">
+                        
+                        <div class="carousel-caption">
                             <h5>'.$project["title"].'</h5>
                             <p>'.$project["description"].'</p>
+                            <div class="caption-links">';
+
+                    echo ($project["url"] != "none") ? '<a href="'.$project["url"].'" target="blank"><i class="fa fa-external-link"></i></a>' : '';
+                    echo ($project["github_url"] != "none") ? '<a href="'.$project["github_url"].'" target="blank"><i class="fa fa-github-alt"></i></a>' : '';
+                        
+                    echo' </div>
                         </div>
-                     </a>';
+                     </div>';
                 }
             ?>
         </div> <!-- end of carousel-inner -->
