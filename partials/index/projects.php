@@ -35,8 +35,8 @@
                     
                     echo '" target="blank">';
 
-                    echo '<img src="'.$project["img_url"].'" class="d-none d-md-block">
-                        <img src="'.$project["img_url_m"].'" class="d-md-none d-xs-block">
+                    echo '<img src="'.$project["img_url"].'" class="desktop-only">
+                            <img src="'.$project["img_url_m"].'" class="mobile-only-portrait">
                         
                         <div class="carousel-caption">
                             <h5>'.$project["title"].'</h5>
